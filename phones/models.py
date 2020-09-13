@@ -8,7 +8,7 @@ class Phone(models.Model):
     image = models.TextField()
     price = models.CharField(max_length=15)
     release_date = models.CharField(max_length=10)
-    lte_exists = models.CharField(max_length=20)
+    lte_exists = models.CharField(max_length=2)
     slug = models.SlugField()
 
     def title_slug(self):
